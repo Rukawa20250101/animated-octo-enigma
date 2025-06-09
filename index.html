@@ -1,17 +1,59 @@
 <!DOCTYPE html>
-<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>如理作意 | 佛法学习与正念游戏</title><script src="https://cdn.tailwindcss.com"></script></head>
-<body class="bg-gray-50">
-    <div class="min-h-screen flex flex-col">
-        <!-- Header Section -->
-        <header class="w-full bg-gradient-to-br from-blue-500 to-purple-600 text-white p-8 md:p-12 lg:p-20 text-center"><div class="max-w-4xl mx-auto"><h1 class="text-4xl md:text-6xl font-extrabold mb-4">佛法学习资源导航</h1><p class="text-lg md:text-xl text-blue-100 mb-8">汇聚优质佛学资源，助力修学之路</p><div class="relative max-w-xl mx-auto"><input type="search" placeholder="搜索佛法学习资源..." class="w-full p-4 rounded-full text-gray-800 shadow-lg focus:outline-none focus:ring-4 focus:ring-blue-300 transition"><button class="absolute right-2 top-1/2 -translate-y-1/2 bg-purple-700 hover:bg-purple-800 text-white rounded-full p-3 transition"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" /></svg></button></div><div class="mt-10 grid grid-cols-3 gap-4 text-center"><div class="bg-white/20 p-4 rounded-lg backdrop-blur-sm"> <span class="text-3xl font-bold">3</span> <span class="block text-sm">主要分类</span> </div><div class="bg-white/20 p-4 rounded-lg backdrop-blur-sm"> <span class="text-3xl font-bold">10+</span> <span class="block text-sm">精选网站</span> </div><div class="bg-white/20 p-4 rounded-lg backdrop-blur-sm"> <span class="text-3xl font-bold">万+</span> <span class="block text-sm">佛经资源</span> </div></div></div></header>
-        <!-- Main Content -->
-        <main class="flex-grow container mx-auto p-6 md:p-10 -mt-16"><div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Card 1: 智慧之海 -->
-            <a href="./page-ocean.html" class="bg-white rounded-2xl shadow-xl hover:shadow-2xl p-8 flex flex-col items-center text-center transition-transform transform hover:-translate-y-2"><div class="text-6xl mb-4">🌊</div><h2 class="text-2xl font-bold text-gray-800 mb-2">智慧之海导航</h2><p class="text-gray-500 mb-4">现代卡片式设计，视觉化呈现精选资源。</p><span class="mt-auto text-blue-600 font-semibold hover:underline">进入页面 →</span></a>
-            <!-- Card 2: 觉路导航 -->
-            <a href="./page-classic.html" class="bg-white rounded-2xl shadow-xl hover:shadow-2xl p-8 flex flex-col items-center text-center transition-transform transform hover:-translate-y-2"><div class="text-6xl mb-4">📜</div><h2 class="text-2xl font-bold text-gray-800 mb-2">觉路导航</h2><p class="text-gray-500 mb-4">经典列表式设计，简洁明了，直达核心。</p><span class="mt-auto text-blue-600 font-semibold hover:underline">进入页面 →</span></a>
-            <!-- Card 3: 正念游戏 -->
-            <a href="./game.html" class="bg-white rounded-2xl shadow-xl hover:shadow-2xl p-8 flex flex-col items-center text-center transition-transform transform hover:-translate-y-2"><div class="text-6xl mb-4">🎮</div><h2 class="text-2xl font-bold text-gray-800 mb-2">正念游戏站</h2><p class="text-gray-500 mb-4">通过互动游戏体验，培养内心的宁静与专注。</p><span class="mt-auto text-blue-600 font-semibold hover:underline">进入页面 →</span></a>
-        </div></main>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>如理作意 | 佛法学习与正念游戏</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .card-hover-effect { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card-hover-effect:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.2); }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-blue-500 to-purple-600 p-6 text-white">
+        
+        <!-- 主标题 -->
+        <header class="text-center mb-16">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-4" style="text-shadow: 3px 3px 6px rgba(0,0,0,0.3);">如理作意</h1>
+            <p class="text-xl md:text-2xl text-blue-100">一个探索内心平静与智慧的数字空间</p>
+        </header>
+
+        <!-- 卡片导航区 -->
+        <main class="w-full max-w-5xl">
+            <div class="grid md:grid-cols-2 gap-10">
+                
+                <!-- 佛法智慧导航卡片 -->
+                <a href="./dharma-nav.html" class="group bg-white/20 backdrop-blur-xl rounded-2xl p-8 flex flex-col items-start text-left card-hover-effect border border-white/30">
+                    <div class="mb-4 bg-white/30 p-4 rounded-xl">
+                        <span class="text-5xl">📚</span>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-2">佛法智慧导航</h2>
+                    <p class="text-blue-100 mb-6 flex-grow">汇聚全球高质量佛学网站、在线藏经阁与实用工具，开启您的闻思修之旅。</p>
+                    <span class="mt-auto text-white font-semibold flex items-center group-hover:underline">
+                        进入导航站 <span class="ml-2 transition-transform group-hover:translate-x-2">→</span>
+                    </span>
+                </a>
+
+                <!-- 正念游戏站卡片 -->
+                <a href="./game.html" class="group bg-white/20 backdrop-blur-xl rounded-2xl p-8 flex flex-col items-start text-left card-hover-effect border border-white/30">
+                    <div class="mb-4 bg-white/30 p-4 rounded-xl">
+                        <span class="text-5xl">🎮</span>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-2">正念游戏站</h2>
+                    <p class="text-blue-100 mb-6 flex-grow">通过精心设计的互动游戏，在轻松愉悦的体验中，训练专注力，培养觉察力。</p>
+                    <span class="mt-auto text-white font-semibold flex items-center group-hover:underline">
+                        开始游戏 <span class="ml-2 transition-transform group-hover:translate-x-2">→</span>
+                    </span>
+                </a>
+
+            </div>
+        </main>
+
+        <!-- 页脚 -->
+        <footer class="text-center text-white/70 mt-16 text-sm">
+            <p>© 2024 Yonisomanasikāra Project. All rights reserved.</p>
+        </footer>
     </div>
-</body></html>
+</body>
+</html>
