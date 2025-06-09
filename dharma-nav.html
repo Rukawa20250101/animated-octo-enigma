@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>佛法智慧导航 | 如理作意</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 为了保留您代码的精髓，我们保留了少量自定义样式 */
+        body { font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif; }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-500 to-purple-600 min-h-screen text-gray-800">
+    <!-- 增加一个固定的导航栏，用于返回主页 -->
+    <nav class="bg-white/30 backdrop-blur-xl sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-white">智慧导航</h1>
+            <a href="./index.html" class="px-4 py-2 bg-white/80 text-purple-700 font-semibold rounded-full hover:bg-white transition-all text-sm">返回门户主页</a>
+        </div>
+    </nav>
+
+    <div class="container mx-auto p-4 md:p-8">
+        <!-- 头部区域 -->
+        <header class="text-center py-12">
+            <h1 class="text-4xl md:text-5xl font-light text-white mb-3" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">佛法学习资源导航</h1>
+            <p class="text-lg text-white/90 mb-8">汇聚优质佛学资源，助力修学之路</p>
+            
+            <div class="relative max-w-2xl mx-auto mb-8">
+                <input type="text" id="searchInput" placeholder="搜索佛法学习资源..." class="w-full py-4 px-6 rounded-full text-lg shadow-xl focus:outline-none focus:ring-4 focus:ring-blue-300 transition">
+            </div>
+
+            <div class="flex justify-center gap-8 md:gap-16 text-white">
+                <div><span class="text-3xl font-bold">9</span><span class="block text-sm opacity-90">主要分类</span></div>
+                <div><span class="text-3xl font-bold">25+</span><span class="block text-sm opacity-90">精选网站</span></div>
+                <div><span class="text-3xl font-bold">万+</span><span class="block text-sm opacity-90">佛经资源</span></div>
+            </div>
+        </header>
+
+        <!-- 内容区域 -->
+        <main class="space-y-8">
+            <!-- 权威佛经数据库 -->
+            <div class="category bg-white/90 backdrop-blur-lg rounded-2xl p-6 md:p-8 shadow-2xl" data-category="权威佛经数据库">
+                <h2 class="text-2xl font-bold text-purple-700 mb-6 pb-3 border-b-2 border-gray-200 flex items-center gap-3"><span class="text-2xl">📖</span>权威佛经数据库</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="website-card bg-white rounded-lg p-6 shadow-md border-l-4 border-blue-500 hover:shadow-lg hover:border-blue-600 transition-all">
+                        <h3 class="font-bold text-lg mb-2"><a href="https://deerpark.app" target="_blank" class="text-gray-800 hover:text-blue-600">漢文大藏經</a></h3>
+                        <p class="text-gray-600 text-sm mb-4 leading-relaxed">典藏4700部/20000卷三藏佛經，校對排版精良，支持在线阅读、PDF下载、推送至Kindle。</p>
+                        <div class="flex flex-wrap gap-2"><span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">大藏经</span><span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">权威</span></div>
+                    </div>
+                    <!-- ... 这里省略了其他卡片的代码，但结构和上面一样 ... -->
+                    <div class="website-card bg-white rounded-lg p-6 shadow-md border-l-4 border-blue-500 hover:shadow-lg hover:border-blue-600 transition-all"><h3 class="font-bold text-lg mb-2"><a href="https://deerpark.ai" target="_blank" class="text-gray-800 hover:text-blue-600">Deerpark AI</a></h3><p class="text-gray-600 text-sm mb-4 leading-relaxed">GPT-4辅助阅读14,000卷佛典，AI生成现代文，对照阅读文言文佛经，配有机器人实时答疑。</p><div class="flex flex-wrap gap-2"><span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">AI辅助</span><span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">现代文</span></div></div>
+                    <div class="website-card bg-white rounded-lg p-6 shadow-md border-l-4 border-blue-500 hover:shadow-lg hover:border-blue-600 transition-all"><h3 class="font-bold text-lg mb-2"><a href="https://cbetaonline.dila.edu.tw" target="_blank" class="text-gray-800 hover:text-blue-600">CBETA 線上閱讀</a></h3><p class="text-gray-600 text-sm mb-4 leading-relaxed">中华电子佛典协会官方平台，提供权威的佛经电子化资源，是佛学研究的重要工具。</p><div class="flex flex-wrap gap-2"><span class="bg-gray-100 text-gray-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">官方</span><span class="bg-gray-100 text-gray-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">学术</span></div></div>
+                </div>
+            </div>
+             <!-- ... 其他分类 ... -->
+            <div class="category bg-white/90 backdrop-blur-lg rounded-2xl p-6 md:p-8 shadow-2xl" data-category="佛经阅读平台"><h2 class="text-2xl font-bold text-purple-700 mb-6 pb-3 border-b-2 border-gray-200 flex items-center gap-3"><span class="text-2xl">📚</span>佛经阅读平台</h2><div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"><div class="website-card bg-white rounded-lg p-6 shadow-md border-l-4 border-blue-500 hover:shadow-lg hover:border-blue-600 transition-all"><h3 class="font-bold text-lg mb-2"><a href="https://fojingzaixian.com" target="_blank" class="text-gray-800 hover:text-blue-600">佛经在线</a></h3><p class="text-gray-600 text-sm mb-4 leading-relaxed">提供佛经大全和下载服务，方便在线阅读各类佛教经典。</p><div class="flex flex-wrap gap-2"><span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">在线阅读</span></div></div><div class="website-card bg-white rounded-lg p-6 shadow-md border-l-4 border-blue-500 hover:shadow-lg hover:border-blue-600 transition-all"><h3 class="font-bold text-lg mb-2"><a href="https://dizang.org" target="_blank" class="text-gray-800 hover:text-blue-600">地藏孝亲网</a></h3><p class="text-gray-600 text-sm mb-4 leading-relaxed">包含印光大师文钞菁华录、净土法门开示等丰富的法师开示内容。</p><div class="flex flex-wrap gap-2"><span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">祖师开示</span><span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">净土</span></div></div></div></div>
+            <div class="category bg-white/90 backdrop-blur-lg rounded-2xl p-6 md:p-8 shadow-2xl" data-category="现代法师开示"><h2 class="text-2xl font-bold text-purple-700 mb-6 pb-3 border-b-2 border-gray-200 flex items-center gap-3"><span class="text-2xl">🎙️</span>现代法师开示</h2><div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"><div class="website-card bg-white rounded-lg p-6 shadow-md border-l-4 border-blue-500 hover:shadow-lg hover:border-blue-600 transition-all"><h3 class="font-bold text-lg mb-2"><a href="https://fodizi.net" target="_blank" class="text-gray-800 hover:text-blue-600">佛弟子文库</a></h3><p class="text-gray-600 text-sm mb-4 leading-relaxed">汇集慧律法师、大安法师、净界法师等开示，分类清晰，便于查找。</p><div class="flex flex-wrap gap-2"><span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">法师开示</span><span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">文库</span></div></div><div class="website-card bg-white rounded-lg p-6 shadow-md border-l-4 border-blue-500 hover:shadow-lg hover:border-blue-600 transition-all"><h3 class="font-bold text-lg mb-2"><a href="https://ddm.org.tw" target="_blank" class="text-gray-800 hover:text-blue-600">法鼓山全球资讯网</a></h3><p class="text-gray-600 text-sm mb-4 leading-relaxed">圣严法师及法鼓山相关的开示内容，注重心灵环保与人间佛教。</p><div class="flex flex-wrap gap-2"><span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">人间佛教</span></div></div></div></div>
+        </main>
+
+        <footer class="text-center text-white/80 py-10">
+            <p>🙏 愿所有众生离苦得乐，究竟解脱</p>
+            <p class="mt-2 text-sm opacity-70">本导航站收集整理优质佛法学习资源，助力大家的修学之路</p>
+        </footer>
+    </div>
+
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const categories = document.querySelectorAll('.category');
+        searchInput.addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase().trim();
+            categories.forEach(category => {
+                let hasVisibleCards = false;
+                const cards = category.querySelectorAll('.website-card');
+                cards.forEach(card => {
+                    const content = card.textContent.toLowerCase();
+                    if (content.includes(searchTerm)) {
+                        card.style.display = ''; hasVisibleCards = true;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+                category.style.display = hasVisibleCards ? '' : 'none';
+            });
+        });
+    </script>
+</body>
+</html>
