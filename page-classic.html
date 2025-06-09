@@ -1,12 +1,106 @@
 <!DOCTYPE html>
-<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>觉路导航 | 佛法学习导航</title><script src="https://cdn.tailwindcss.com"></script></head>
-<body class="bg-green-50 font-sans">
-    <div class="max-w-4xl mx-auto p-8">
-        <header class="text-center mb-10"><h1 class="text-4xl font-bold text-green-800">觉路导航</h1><p class="text-green-600 mt-2">精选佛法学习资源，一站直达</p><a href="./index.html" class="inline-block mt-4 px-4 py-2 bg-green-600 text-white text-sm font-semibold rounded-full hover:bg-green-700 transition-colors">返回门户主页</a></header>
-        <div class="space-y-8">
-            <section><h2 class="text-2xl font-semibold text-gray-700 flex items-center mb-4"><span class="mr-3 text-2xl">📖</span>佛经阅读</h2><div class="border-t pt-4 space-y-3"><p><a href="https://suttacentral.net/" target="_blank" class="text-lg text-blue-600 hover:underline">SuttaCentral 巴利三藏</a></p><p><a href="https://www.cbeta.org/" target="_blank" class="text-lg text-blue-600 hover:underline">CBETA 汉传大藏经</a></p></div></section>
-            <section><h2 class="text-2xl font-semibold text-gray-700 flex items-center mb-4"><span class="mr-3 text-2xl">🎧</span>禅修音频</h2><div class="border-t pt-4 space-y-3"><p><a href="https://www.dhamma.org/" target="_blank" class="text-lg text-blue-600 hover:underline">Dhamma.org 葛印卡内观</a></p><p><a href="#" target="_blank" class="text-lg text-gray-400 cursor-not-allowed" title="暂无链接">慧灯之光 索达吉堪布 (示例)</a></p></div></section>
-            <section><h2 class="text-2xl font-semibold text-gray-700 flex items-center mb-4"><span class="mr-3 text-2xl">🎓</span>佛法入门</h2><div class="border-t pt-4 space-y-3"><p><a href="https://www.dharmadrum.org/" target="_blank" class="text-lg text-blue-600 hover:underline">法鼓文化 圣严法师</a></p><p><a href="#" target="_blank" class="text-lg text-gray-400 cursor-not-allowed" title="暂无链接">中国佛教网 (示例)</a></p></div></section>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>觉路导航 - 佛法学习资源精选 | 如理作意</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 为了保留古典风格，我们定义一些基础颜色 */
+        body {
+            background-color: #f4f4e6; /* 淡淡的米黄色背景 */
+            color: #333; /* 主要文字颜色 */
+        }
+        .header-classic {
+            background-color: #d0e6d0; /* 浅绿色头部 */
+        }
+        .footer-classic {
+            background-color: #e0f0e0; /* 更浅的绿色页脚 */
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- 头部 -->
+    <header class="header-classic py-6 text-center shadow-md">
+        <div class="container mx-auto px-6">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-800">觉路导航</h1>
+            <p class="text-gray-600 mt-2">精选佛法学习资源，一站直达</p>
+            <!-- 增加了返回门户主页的按钮，风格统一 -->
+            <a href="./index.html" class="mt-4 inline-block px-5 py-2 bg-white/70 text-green-800 font-semibold rounded-full hover:bg-white transition-all text-sm shadow">返回门户主页</a>
         </div>
-    </div>
-</body></html>
+    </header>
+
+    <!-- 主体内容 -->
+    <main class="container mx-auto max-w-4xl px-6 py-10">
+        <div class="space-y-10">
+
+            <section>
+                <h2 class="text-2xl font-semibold border-b-2 border-gray-300 pb-2 mb-4 flex items-center">
+                    <span class="mr-3 text-2xl">📖</span> 佛经阅读
+                </h2>
+                <ul class="list-disc list-inside space-y-2">
+                    <li><a href="https://suttacentral.net/" target="_blank" class="text-blue-700 hover:underline">SuttaCentral 巴利三藏</a></li>
+                    <li><a href="https://cbetaonline.dila.edu.tw" target="_blank" class="text-blue-700 hover:underline">CBETA 汉传大藏经</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-semibold border-b-2 border-gray-300 pb-2 mb-4 flex items-center">
+                    <span class="mr-3 text-2xl">🔊</span> 禅修音频
+                </h2>
+                <ul class="list-disc list-inside space-y-2">
+                    <li><a href="https://www.dhamma.org" target="_blank" class="text-blue-700 hover:underline">Dhamma.org 葛印卡内观</a></li>
+                    <li><a href="https://www.huidengzhiguang.com" target="_blank" class="text-blue-700 hover:underline">慧灯之光 索达吉堪布</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-semibold border-b-2 border-gray-300 pb-2 mb-4 flex items-center">
+                    <span class="mr-3 text-2xl">🎓</span> 佛法入门
+                </h2>
+                <ul class="list-disc list-inside space-y-2">
+                    <li><a href="https://www.ddc.com.tw" target="_blank" class="text-blue-700 hover:underline">法鼓文化 圣严法师</a></li>
+                    <li><a href="http://www.zgfj.cn" target="_blank" class="text-blue-700 hover:underline">中国佛教网</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-semibold border-b-2 border-gray-300 pb-2 mb-4 flex items-center">
+                    <span class="mr-3 text-2xl">🌐</span> 多语资源
+                </h2>
+                <ul class="list-disc list-inside space-y-2">
+                    <li><a href="https://learn.pali.in" target="_blank" class="text-blue-700 hover:underline">Learn Pali 巴利语学习</a></li>
+                    <li><a href="https://jingjue.org" target="_blank" class="text-blue-700 hover:underline">境觉法林 藏密资源</a></li>
+                </ul>
+            </section>
+            
+            <section>
+                <h2 class="text-2xl font-semibold border-b-2 border-gray-300 pb-2 mb-4 flex items-center">
+                    <span class="mr-3 text-2xl">🧘‍♀️</span> 禅修中心
+                </h2>
+                <ul class="list-disc list-inside space-y-2">
+                    <li><a href="https://www.paaukforestmonastery.org/" target="_blank" class="text-blue-700 hover:underline">帕奥禅林</a></li>
+                    <li><a href="https://www.dhamma.org" target="_blank" class="text-blue-700 hover:underline">葛印卡课程注册</a></li>
+                </ul>
+            </section>
+            
+            <section>
+                <h2 class="text-2xl font-semibold border-b-2 border-gray-300 pb-2 mb-4 flex items-center">
+                    <span class="mr-3 text-2xl">📥</span> 下载资料
+                </h2>
+                <ul class="list-disc list-inside space-y-2">
+                    <li><a href="https://suttacentral.net/downloads" target="_blank" class="text-blue-700 hover:underline">佛经 PDF 下载 - SuttaCentral</a></li>
+                    <li><a href="https://www.huidengzhiguang.com/download.html" target="_blank" class="text-blue-700 hover:underline">慧灯音频资料下载</a></li>
+                </ul>
+            </section>
+
+        </div>
+    </main>
+    
+    <!-- 页脚 -->
+    <footer class="footer-classic text-center py-4 mt-10 text-sm text-gray-700">
+        <p>© 2025 觉路导航 | 由 AI 协助搭建 · 佛法共修，精进不懈</p>
+    </footer>
+
+</body>
+</html>
