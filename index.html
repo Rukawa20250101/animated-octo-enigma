@@ -1,147 +1,17 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>佛法学习导航 | 如理作意</title>
-    <meta name="description" content="一个精选的高质量佛法学习资源导航站，聚合了权威的在线藏经阁、各宗派学习平台和实用的研究工具。">
-    <meta name="keywords" content="佛法学习,佛教导航,在线读经,CBETA,SuttaCentral,佛光山,法鼓山,佛教资源">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* 自定义渐变背景 */
-        .gradient-bg-calm {
-            background: linear-gradient(135deg, #E0E7FF 0%, #CFFAFE 50%, #FEF9C3 100%);
-        }
-        /* 卡片悬停效果 */
-        .card-hover-effect {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .card-hover-effect:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-        /* 标题动画 */
-        .fade-in-up {
-            animation: fadeInUp 1s ease-out;
-        }
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
-</head>
-<body class="bg-gray-50 font-sans">
-
-    <!-- 页面头部 -->
-    <header class="bg-white/80 backdrop-blur-lg shadow-sm sticky top-0 z-50">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center">
-                <span class="text-3xl mr-3">🧘</span>
-                <h1 class="text-xl font-bold text-gray-800 hidden sm:block">如理作意 | 佛法学习导航</h1>
-                <h1 class="text-xl font-bold text-gray-800 sm:hidden">学习导航</h1>
-            </div>
-            <a href="./game.html" class="px-4 py-2 bg-blue-500 text-white text-sm font-semibold rounded-full hover:bg-blue-600 transition-colors shadow-md hover:shadow-lg">
-                前往正念游戏
-            </a>
-        </div>
-    </header>
-
-    <!-- Banner 横幅 -->
-    <section class="gradient-bg-calm py-20 text-center fade-in-up">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-4">智慧之海，由此启航</h2>
-            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                精选全球高质量佛法学习资源，助您在闻思修的道路上，行稳致远。
-            </p>
-        </div>
-    </section>
-
-    <!-- 主体内容 -->
-    <main class="container mx-auto px-6 py-12 -mt-16">
-
-        <!-- 综合门户与在线藏经阁 -->
-        <section class="mb-12">
-            <h3 class="text-2xl font-bold text-gray-700 mb-6">📚 综合门户与在线藏经阁</h3>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <a href="https://www.cbeta.org/" target="_blank" class="block bg-white rounded-xl shadow-lg p-6 card-hover-effect">
-                    <h4 class="font-bold text-lg mb-2 text-blue-800">CBETA 中华电子佛典协会</h4>
-                    <p class="text-gray-600 text-sm">全球最权威、最全面的汉传佛教电子佛经数据库，深入研究必备。</p>
-                </a>
-                <a href="https://suttacentral.net/" target="_blank" class="block bg-white rounded-xl shadow-lg p-6 card-hover-effect">
-                    <h4 class="font-bold text-lg mb-2 text-blue-800">SuttaCentral</h4>
-                    <p class="text-gray-600 text-sm">早期佛教经典的家园，提供多语言对照阅读，适合追本溯源。</p>
-                </a>
-                <a href="https://84000.co/" target="_blank" class="block bg-white rounded-xl shadow-lg p-6 card-hover-effect">
-                    <h4 class="font-bold text-lg mb-2 text-blue-800">84000 Project</h4>
-                    <p class="text-gray-600 text-sm">致力于将藏文大藏经《甘珠尔》翻译为现代语言的宏大项目。</p>
-                </a>
-            </div>
-        </section>
-
-        <!-- 汉传佛教 -->
-        <section class="mb-12">
-            <h3 class="text-2xl font-bold text-gray-700 mb-6">⛩️ 汉传佛教</h3>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <a href="https://www.fgs.org.tw/" target="_blank" class="block bg-white rounded-xl shadow-lg p-6 card-hover-effect">
-                    <h4 class="font-bold text-lg mb-2 text-green-800">佛光山全球资讯网</h4>
-                    <p class="text-gray-600 text-sm">星云大师创立，了解“人间佛教”理念与实践的最佳窗口。</p>
-                </a>
-                <a href="https://www.dharmadrum.org/" target="_blank" class="block bg-white rounded-xl shadow-lg p-6 card-hover-effect">
-                    <h4 class="font-bold text-lg mb-2 text-green-800">法鼓山全球资讯网</h4>
-                    <p class="text-gray-600 text-sm">圣严法师创立，系统学习禅修和佛学教育的权威平台。</p>
-                </a>
-            </div>
-        </section>
-
-        <!-- 南传佛教（上座部） -->
-        <section class="mb-12">
-            <h3 class="text-2xl font-bold text-gray-700 mb-6">🌴 南传佛教 (上座部)</h3>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <a href="https://www.accesstoinsight.org/" target="_blank" class="block bg-white rounded-xl shadow-lg p-6 card-hover-effect">
-                    <h4 class="font-bold text-lg mb-2 text-orange-800">Access to Insight</h4>
-                    <p class="text-gray-600 text-sm">备受尊敬的南传佛教资源库，收录大量经文翻译和杰出法师教导。</p>
-                </a>
-            </div>
-        </section>
-
-        <!-- 藏传佛教 -->
-        <section class="mb-12">
-            <h3 class="text-2xl font-bold text-gray-700 mb-6">🏔️ 藏传佛教</h3>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <a href="https://www.lamayeshe.com/" target="_blank" class="block bg-white rounded-xl shadow-lg p-6 card-hover-effect">
-                    <h4 class="font-bold text-lg mb-2 text-purple-800">喇嘛耶喜智慧库</h4>
-                    <p class="text-gray-600 text-sm">系统学习格鲁派“道次第”等核心教义的极佳免费学习中心。</p>
-                </a>
-            </div>
-        </section>
-
-        <!-- 专题研究与工具 -->
-        <section>
-            <h3 class="text-2xl font-bold text-gray-700 mb-6">🛠️ 专题研究与工具</h3>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <a href="http://www.buddhism-dict.net/ddb/" target="_blank" class="block bg-white rounded-xl shadow-lg p-6 card-hover-effect">
-                    <h4 class="font-bold text-lg mb-2 text-gray-800">Digital Dictionary of Buddhism</h4>
-                    <p class="text-gray-600 text-sm">专业的学术性佛教词汇数字词典，解决读经过程中的名词术语问题。</p>
-                </a>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- 页脚 -->
-    <footer class="bg-white mt-12 py-8 border-t">
-        <div class="container mx-auto px-6 text-center text-gray-500 text-sm">
-            <p>© 2024 Yonisomanasikāra. 智慧之光，普照十方。</p>
-            <p class="mt-2">一个旨在通过技术聚合优质学习资源的公益项目。</p>
-        </div>
-    </footer>
-
-</body>
-</html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>如理作意 | 佛法学习与正念游戏</title><script src="https://cdn.tailwindcss.com"></script></head>
+<body class="bg-gray-50">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header Section -->
+        <header class="w-full bg-gradient-to-br from-blue-500 to-purple-600 text-white p-8 md:p-12 lg:p-20 text-center"><div class="max-w-4xl mx-auto"><h1 class="text-4xl md:text-6xl font-extrabold mb-4">佛法学习资源导航</h1><p class="text-lg md:text-xl text-blue-100 mb-8">汇聚优质佛学资源，助力修学之路</p><div class="relative max-w-xl mx-auto"><input type="search" placeholder="搜索佛法学习资源..." class="w-full p-4 rounded-full text-gray-800 shadow-lg focus:outline-none focus:ring-4 focus:ring-blue-300 transition"><button class="absolute right-2 top-1/2 -translate-y-1/2 bg-purple-700 hover:bg-purple-800 text-white rounded-full p-3 transition"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" /></svg></button></div><div class="mt-10 grid grid-cols-3 gap-4 text-center"><div class="bg-white/20 p-4 rounded-lg backdrop-blur-sm"> <span class="text-3xl font-bold">3</span> <span class="block text-sm">主要分类</span> </div><div class="bg-white/20 p-4 rounded-lg backdrop-blur-sm"> <span class="text-3xl font-bold">10+</span> <span class="block text-sm">精选网站</span> </div><div class="bg-white/20 p-4 rounded-lg backdrop-blur-sm"> <span class="text-3xl font-bold">万+</span> <span class="block text-sm">佛经资源</span> </div></div></div></header>
+        <!-- Main Content -->
+        <main class="flex-grow container mx-auto p-6 md:p-10 -mt-16"><div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1: 智慧之海 -->
+            <a href="./page-ocean.html" class="bg-white rounded-2xl shadow-xl hover:shadow-2xl p-8 flex flex-col items-center text-center transition-transform transform hover:-translate-y-2"><div class="text-6xl mb-4">🌊</div><h2 class="text-2xl font-bold text-gray-800 mb-2">智慧之海导航</h2><p class="text-gray-500 mb-4">现代卡片式设计，视觉化呈现精选资源。</p><span class="mt-auto text-blue-600 font-semibold hover:underline">进入页面 →</span></a>
+            <!-- Card 2: 觉路导航 -->
+            <a href="./page-classic.html" class="bg-white rounded-2xl shadow-xl hover:shadow-2xl p-8 flex flex-col items-center text-center transition-transform transform hover:-translate-y-2"><div class="text-6xl mb-4">📜</div><h2 class="text-2xl font-bold text-gray-800 mb-2">觉路导航</h2><p class="text-gray-500 mb-4">经典列表式设计，简洁明了，直达核心。</p><span class="mt-auto text-blue-600 font-semibold hover:underline">进入页面 →</span></a>
+            <!-- Card 3: 正念游戏 -->
+            <a href="./game.html" class="bg-white rounded-2xl shadow-xl hover:shadow-2xl p-8 flex flex-col items-center text-center transition-transform transform hover:-translate-y-2"><div class="text-6xl mb-4">🎮</div><h2 class="text-2xl font-bold text-gray-800 mb-2">正念游戏站</h2><p class="text-gray-500 mb-4">通过互动游戏体验，培养内心的宁静与专注。</p><span class="mt-auto text-blue-600 font-semibold hover:underline">进入页面 →</span></a>
+        </div></main>
+    </div>
+</body></html>
